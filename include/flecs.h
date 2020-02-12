@@ -336,7 +336,7 @@ extern ecs_type_t
     (void)id;\
     (void)ecs_type(id);\
 
-/** Declare a systen.
+/** Declare a system.
  * This macro declares a system with the specified function, kind and signature. 
  * Systems are matched with entities that match the system signature. The system
  * signature is specified as a comma-separated list of column expressions, where
@@ -353,7 +353,7 @@ extern ecs_type_t
  * - An entity expression ('MyEntity.Position')
  * - An empty expression ('.Position')
  * 
- * The systen kind specifies the phase in which the system is ran.
+ * The system kind specifies the phase in which the system is ran.
  *
  * Examples:
  * ECS_SYSTEM(world, Move, EcsOnUpdate, Position, Velocity, !AngularVelocity);
